@@ -8,40 +8,69 @@
     <style>
         h1 {
             text-align: center;
-            background-color: whitesmoke;
+            background-color: lightcoral;
         }
         #container{
+            display: flexbox;
             padding: 20px;
-            width: 50%;
+            width: 45%;
             height: 100%;
             float: left;
+            background-color: lightblue;
+            margin: 10px;
         }
         #random{
             width: 90%;
             height: 100%;
         }
-        nav{
+        #navigation{
+            background-color: lightgreen;
+            display: flex;
+            height: 100%;
+            margin: 10px;
+        }
+        #nav{
+            text-align: center;
+        }
+        #form{
+            background-color: yellow;
+            margin: 10px;
+            display: flex;
             padding: 20px;
+            height: 100%
         }
 </style>
     <script></script>
 </head>
 <body>
-    <h1>Vincent's static website</h1>
+    <h1>My static website</h1>
     <div id="container">
         <h2>About me:</h2>
-        <p style="font-size:24px">Hi! I am Vincent. I enjoy reading, playing puzzle games and also listening to music.</p>
+        <p style="font-size:24px">Hi! I am Vincent. I enjoy reading, playing games and also listening to music.</p>
         <img id="random" src="https://th.bing.com/th/id/R.08f95313db3449d45d024fb5ef6b101e?rik=EayBbXfrN%2bz93w&riu=http%3a%2f%2fcdn.wallpapersafari.com%2f30%2f7%2fTBw46f.jpg&ehk=t2YOci%2blX94SYi4FMvplAr01g2syXPZAZnsmyg52nO8%3d&risl=&pid=ImgRaw&r=0">
         <p>&#xa9 All Rights Reverved</p>
     </div>
-    <div>
+    <div id="navigation">
         <nav>
+            <h2 id="nav">Navigation: </h2>
             <ul>
-                <li><a href src="favorites.html">Favorites</a></li>
-                <li><a href src="skills.html">Skills</a></li>
-                <li><a href src="spots.html">Spots</a></li>
+                <li><a href="favorites.html">Favorites</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="spots.html">Spots</a></li>
             </ul>
         </nav>
+    </div>
+    <div id="form">
+        <form>
+            <h2>Feedback: </h2>
+            <label for="name" id="name">Your name:</label><br>
+            <input type="text" id="names"><br><br>
+            <label for="email" id="email">Your Email: </label><br>
+            <input type="text" id="emails"><br><br>
+            <label for="comment" id="comment">Comments</label><br>
+            <textarea rows="5" cols="33"></textarea><br>
+            <input type="Submit" value="Submit">
+        </form>
     </div>
 </body>
 </html>
